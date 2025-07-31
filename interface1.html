@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crisis Relief Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .feature {
+      background: white;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .feature img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .feature h2 {
+      color: #003366;
+    }
+    button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Crisis Relief DApp Router</h1>
+  <p>A centralized platform for managing disaster response logistics</p>
+</header>
+
+<section class="feature">
+  <button onclick="openDApp('https://testcontractforupdate.surge.sh/')">
+    Resource Mapping
+  </button> <br>
+  <img src="https://via.placeholder.com/800x300?text=Resource+Mapping" alt="Resource Mapping">
+  <p>Visualize and track available resources like food, water, medical supplies, and personnel across different regions. Mapping ensures better allocation and prevents resource clustering or scarcity.</p>
+</section>
+
+<section class="feature">
+  <button onclick="openDApp('https://studentfeemanager.surge.sh/')">
+ Demand Management
+  </button><br>
+  <img src="https://via.placeholder.com/800x300?text=Demand+Management" alt="Demand Management">
+  <p>Monitor demand signals from affected areas in real-time. Prioritize needs based on severity, urgency, and population size to coordinate a timely and proportional response.</p>
+</section>
+
+<section class="feature">
+  <button onclick="openDApp('https://securevaultowner.surge.sh/')">
+    Resource Allocator
+  </button><br>
+  <img src="https://via.placeholder.com/800x300?text=Resource+Allocator" alt="Resource Allocator">
+  <p>Dynamically assign available resources to demand points. This tool uses priority-based or AI-enhanced logic to optimize delivery routes and match needs with the nearest resource hubs.</p>
+</section>
+
+<section class="feature">
+  <button onclick="openDApp('https://etherscan.io/address/0x5FBF17c9C21C48AA82FF9F720659b2a44bdc9CED')">
+    Go to Demand Points
+  </button><br>
+  <img src="https://via.placeholder.com/800x300?text=Demand+Points" alt="Demand Points">
+  <p>Geolocated zones where requests for assistance originate. Each demand point includes critical data like type of need, urgency level, and contact details for local coordinators.</p>
+</section>
+
+ <script>
+    function openDApp(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
